@@ -8,6 +8,7 @@ namespace NzbDrone.Integration.Test.ApiTests
     {
         [TestCase("Kiss", "Kiss")]
         [TestCase("Linkin Park", "Linkin Park")]
+        [Ignore("Temporary wonykiness")]
         public void lookup_new_artist_by_name(string term, string name)
         {
             var artist = Artist.Lookup(term);
